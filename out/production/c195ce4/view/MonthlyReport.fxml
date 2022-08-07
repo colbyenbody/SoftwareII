@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="586.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MonthlyReport">
+   <children>
+      <TableView fx:id="monthlyTable" layoutX="47.0" layoutY="58.0" prefHeight="191.0" prefWidth="561.0">
+        <columns>
+          <TableColumn fx:id="monthCol" prefWidth="76.0" text="Month" />
+            <TableColumn fx:id="titleCol" prefWidth="64.0" text="Title" />
+            <TableColumn fx:id="locationCol" prefWidth="78.0" text="Location" />
+            <TableColumn fx:id="contactIDCol" prefWidth="98.0" text="Contact" />
+            <TableColumn fx:id="descriptionCol" prefWidth="87.0" text="Description" />
+          <TableColumn fx:id="typeCol" prefWidth="73.0" text="Type" />
+            <TableColumn fx:id="totalCol" prefWidth="83.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="241.0" layoutY="14.0" prefHeight="30.0" prefWidth="155.0" text="Monthly Report">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="579.0" layoutY="527.0" mnemonicParsing="false" onAction="#onExitButton" text="Exit" />
+      <Label layoutX="241.0" layoutY="255.0" prefHeight="30.0" prefWidth="155.0" text="Type Report">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="typeTable" layoutX="47.0" layoutY="297.0" prefHeight="200.0" prefWidth="561.0">
+        <columns>
+          <TableColumn fx:id="typeTypeCol" prefWidth="75.0" text="Type" />
+          <TableColumn fx:id="typeMonthCol" prefWidth="75.0" text="Month" />
+            <TableColumn fx:id="typeTitleCol" prefWidth="75.0" text="Title" />
+            <TableColumn fx:id="typeLocationCol" prefWidth="75.0" text="Location" />
+            <TableColumn fx:id="typeContactIDCol" prefWidth="75.0" text="Contact" />
+            <TableColumn fx:id="typeDescriptionCol" prefWidth="106.0" text="Description" />
+            <TableColumn fx:id="typeTotalCol" prefWidth="79.0" text="Total" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
